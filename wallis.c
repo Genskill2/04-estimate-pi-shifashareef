@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
+
 float wallis_pi(int);
 
 int main(void) {
@@ -13,7 +14,8 @@ int main(void) {
       abort();
     }
   }
-   for (int i=500; i<3000; i++) {
+
+  for (int i=500; i<3000; i++) {
     pi = wallis_pi(i);
     if (!(fabs(pi - M_PI) < 0.01)) {
       printf("Estimate with even %d iterations is %f which is not accurate enough.\n", i, pi);
@@ -28,4 +30,5 @@ float wallis_pi(int n)
   float k=(float)e/(e-1);
   p=p*k;
   }return p*2;
-   }
+  
+} 
