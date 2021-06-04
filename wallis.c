@@ -1,7 +1,7 @@
-#include<assert.h>
-#include<stdlib.h>
-#include<stdio.h>
-#include<math.h>
+#include <assert.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
 
 float wallis_pi(int);
 
@@ -31,4 +31,4 @@ float wallis_pi(int n)
   p=p*k;
   }return p*2;
   
-} 
+}
